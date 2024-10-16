@@ -23,7 +23,7 @@ def read_model_variables(fmu_path):
 def simulate_transient_conduction(fmu_path, start_time, stop_time, tolerance, parameters,call_count):
     if call_count == 0:
         print('First simulation!')
-        compile_platform_binary(fmu_path, target_platform = 'linux64')
+        compile_platform_binary(fmu_path)
     result = simulate_fmu(
         fmu_path,
         start_time=start_time,
