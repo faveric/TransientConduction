@@ -80,7 +80,7 @@ st.sidebar.subheader('Simulation Parameters')
 #N = st.sidebar.number_input("Number of Volumes (1D)", min_value=3, value=10, step=1)
 stop_time = st.sidebar.number_input("Stop Time (s)", min_value = 1.0, value=10*tau)
 if st.sidebar.button("Start Simulation"):
-    fmu_path = "./ModelicaResources/TransientConduction_CS.fmu"
+    fmu_path = "./ModelicaResources/TransientConduction.fmu"
     parameters = {
         'rho': rho, 'c': c, 'h': h, 'k': k, 'r0': r0, 'T_init': T_init, 'T_inf': T_inf
     }
