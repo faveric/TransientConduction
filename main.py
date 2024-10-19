@@ -100,9 +100,9 @@ if st.session_state['result'] is not None:
     with st.expander('Show simulation results table'):
         st.dataframe(df)
 
-    st.subheader(r'Time Plot non-dimensional temperatures ($\theta$) - 0D and 1D')
+    st.subheader(r'Time Plot temperatures ($T$) - 0D and 1D')
     plot_T_lumped_and_1d(df)
-    st.subheader('Heisler Chart for 1D non-dimensional temperatures')
+    st.subheader('Heisler Chart for 1D temperatures')
     plot_heisler_T_chart(df)
-    st.subheader('Polar Chart for 1D non-dimensional temperatures')
+    st.subheader('Polar Chart for 1D temperatures')
     plot_polar_temperature_map(df)
